@@ -30,7 +30,7 @@ MinecraftAI/
 ├── Minecraft Server/       # Pre-configured Minecraft server files (Fabric 1.20.1)
 │   ├── mods/               # Server-side mods (Fabric API, Plasmo Voice, Steve AI)
 │   └── server.properties   # Server configuration
-└── wang-fei-bot/           # The Node.js application hosting the Mineflayer bot
+└── botty-bot/              # The Node.js application hosting the Mineflayer bot
     ├── bot.js              # Core bot logic, voice pipeline, and API integration
     ├── package.json        # Project dependencies (mineflayer, plasmovoice, dotenv)
     └── .env                # API key configuration
@@ -59,15 +59,15 @@ Before running the project, ensure you have the following installed on your mach
 3. Ensure the server is running on port `25565` (default).
 
 ### 2. Configure the Bot
-1. Navigate to the `wang-fei-bot` directory:
+1. Navigate to the `botty-bot` directory:
    ```bash
-   cd wang-fei-bot
+   cd botty-bot
    ```
 2. Install the Node.js dependencies:
    ```bash
    npm install
    ```
-3. Create or configure the `.env` file in the `wang-fei-bot` folder and add your Google Gemini API Key:
+3. Create or configure the `.env` file in the `botty-bot` folder and add your Google Gemini API Key:
    ```env
    GEMINI_API_KEY="your_actual_gemini_api_key_here"
    ```
@@ -78,7 +78,7 @@ Before running the project, ensure you have the following installed on your mach
 
 1.  **Start the Minecraft Server** and log into the game.
 2.  **Start the Bot:**
-    Run the bot from the `wang-fei-bot` directory:
+    Run the bot from the `botty-bot` directory:
     ```bash
     node bot.js
     ```
@@ -93,7 +93,7 @@ Before running the project, ensure you have the following installed on your mach
 
 ## ⚙️ Configuration & Customization
 
-All configurations can be found and modified inside `wang-fei-bot/bot.js`:
+All configurations can be found and modified inside `botty-bot/bot.js`:
 
 *   **Target Player for Voice Chat:** Under Section 4, update `saruuuheart` to your Minecraft username so the bot listens and responds to your voice:
     ```javascript
